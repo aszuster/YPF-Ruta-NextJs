@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "tag": "¡nuevo!",
+    "title": "RT Óptimo",
+    "copy": "El plan perfecto para lograr una mayor eficiencia de la flota y alcanzar menores costos",
+    "des1": "Precio diferencial y plazo de pago.",
+    "des2": "Reportes de consumo.",
+    "des3": "Seguimiento GPS.",
+    "des4": "GPS autoinstalable.",
+    "des5": "Plataforma de Gestion y Monitoreo.",
+    "des6": "Tablero de performance de conducción, uso de flota.",
+    "des7": "",
+    "des8": "",
+    "link": "/planes"
+  },
+  {
+    "id": 2,
+    "tag": "",
+    "title": "RT Avanzado",
+    "copy": "La solución digital que mejora, organiza y facilita el trabajo de las flotas profesionales.",
+    "des1": "Precio diferencial y plazo de pago.",
+    "des2": "Monitoreo total del combustible.",
+    "des3": "Seguimiento de tu flota.",
+    "des4": "Analítica avanzada.",
+    "des5": "Planificación de mantenimiento.",
+    "des6": "Vencimiento de documentación.",
+    "des7": "Lectura de variables de vehículos.",
+    "des8": "Y Más.",
+    "link": "/planes"
+  }
+]

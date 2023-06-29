@@ -1,0 +1,31 @@
+.input_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.input_wrap input {
+  width: 360px;
+  padding: 10px;
+  border: 1px solid var(--silver);
+  border-radius: 8px;
+}
+
+.input_wrap label {
+  margin-bottom: 10px;
+}
+
+.error_message {
+  height: 25px;
+  color: red;
+}
+
+.error_message_input input {
+  border: 1px solid red;
+}
+
+.error_message_image {
+  border: 1px solid red;
+}
+.width100 input {
+  width: 100%;
+}

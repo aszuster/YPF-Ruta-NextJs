@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "icon": "/images/icons/blue/icon--tank.svg",
+    "title": "Control total de cargas",
+    "copy": "Hacé un seguimiento de todas tus cargas de combustibles realizadas en YPF mediante:",
+    "detail":["Validación satelital de la ubicación del vehículo al momento de la carga.", "Alertas por cambios del tipo de combustible utilizado.", "Verificación de litros ingresados al tanque vs remito facturado.", "Alertas sobre variaciones abruptas del tanque."]
+  },
+  {
+    "id": 2,
+    "icon": "/images/icons/blue/icon--steering-wheel.svg",
+    "title": "Hábitos de conducción",
+    "copy": "A través de un puntaje de conducción, podés evaluar y corregir el desempeño de tus choferes y así prevenir los accidentes viales, reducir multas y mejorar el rendimiento de tus vehículos. Un buen perfil de manejo en tus choferes puede reducir el consumo de combustible hasta en un 10%. El sistema arrojará información sobre:",
+    "detail":["Excesos de velocidad por segmento vial.", "Frenados bruscos.", "Aceleraciones bruscas.", "Puntaje por vehículos (sobre 100 puntos)."]
+  },
+  {
+    "id": 3,
+    "icon": "/images/icons/blue/icon--truck.svg",
+    "title": "Uso de flota",
+    "copy": "Controlá, a través de indicadores clave, el uso completo de tu flota para tomar las mejores decisiones gerenciales. Obtené información detallada sobre:",
+    "detail":["Distancia por franjas horarias.", "Velocidad máxima y promedio.", "Consumo de combustible.", "Tiempos en detención y en movimiento.", "Emisión de CO2.", "Uso fuera de los rangos permitidos."]
+  },
+  {
+    "id": 4,
+    "icon": "/images/icons/blue/icon--timer.svg",
+    "title": "Tiempos de carga y descarga",
+    "copy": "Optimizá el tiempo de tu flota mientras se realiza la carga y descarga de mercadería para reducir los tiempos muertos. Podés conocer a fondo:",
+    "detail":["Cumplimiento de tiempos de carga y descarga.", "Tiempo de unidades en zonas.", "Tiempo de unidades en planta."]
+  },
+  {
+    "id": 5,
+    "icon": "/images/icons/blue/icon--box.svg",
+    "title": "Cumplimiento de despachos/visitas",
+    "copy": "Controlá la efectividad de tus entregas para mejorar tu performance y mantener satisfechos a tus clientes internos y externos:",
+    "detail":["Cumplimiento y evolución de despachos/visitas.", "Tiempo promedio de despacho/visitas.", "Despachos dentro y fuera de zona de reparto."]
+  },
+  {
+    "id": 6,
+    "icon": "/images/icons/blue/icon--statistics.svg",
+    "title": "Flexibilidad en tus reportes",
+    "copy": "Contamos con reportes que te permiten evaluar los indicadores clave de tu negocio y así mejorar el retorno de tu inversión, a partir de información sobre:",
+    "detail":["Excesos de velocidad.", "Tiempos de traslados.", "Despachos por tipo de clientes.", "Cumplimiento de rutas."]
+  },
+  {
+    "id": 7,
+    "icon": "/images/icons/blue/icon--precision.svg",
+    "title": "Control de la cadena de frío",
+    "copy": "Controlá la temperatura y humedad de la carga a través de indicadores para que la mercadería se mantenga y despache de manera correcta. El sistema arrojará información sobre:",
+    "detail":["Número de alertas generadas por una temperatura fuera del rango.", "Tiempo fuera del rango.", "Temperatura diaria.", "Análisis de temperatura por viaje."]
+  },
+  {
+    "id": 8,
+    "icon": "/images/icons/blue/icon--location.svg",
+    "title": "Analítica de computadora a bordo",
+    "copy": "Mediante un accesorio que conecta todos los aspectos del vehículo podés obtener información valiosa sobre tu flota:",
+    "detail":["Consumo promedio de combustible.", "Aviso temprano de fallas.", "Tiempo y consumos en ralentí.", "Temperatura del motor.", "Variaciones abruptas del tanque de combustible.", "RPM en tiempo real."]
+  },
+  {
+    "id": 9,
+    "icon": "/images/icons/blue/icon--tool.svg",
+    "title": "Gestión de mantenimiento y documentación",
+    "copy": "Controlá todos los aspectos asociados al mantenimiento y documentación de tus vehículos. El sistema otorga información sobre:",
+    "detail":["Vencimiento de la VTV, carnet de conducir, matafuegos, seguros, entre otros.", "Próximos cambios de aceite, correa y filtros.", "Vida útil de los componentes de tu vehículo.", "Órdenes de trabajo."]
+  }
+]

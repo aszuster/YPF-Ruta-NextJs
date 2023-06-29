@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Ahorro",
+    "tag": "¡nuevo!",
+    "icon": "/images/home/benefits/savings.svg",
+    "copy": "Precio diferencial y plazo de pago. Reducción del consumo de combustible por conductas de manejo eficientes."
+  },
+  {
+    "id": 2,
+    "title": "Control de combustible",
+    "tag": "¡nuevo!",
+    "icon": "/images/home/highlights/tank.svg",
+    "copy": "Información de consumos y validación de carga mediante geoposicionamiento y volumen de tanque."
+  },
+  {
+    "id": 3,
+    "title": "Calidad",
+    "tag": "¡nuevo!",
+    "icon": "/images/home/benefits/quality.svg",
+    "copy": "Garantizada a través de todos los productos YPF y el máximo nivel de servicio de su nueva plataforma telemática y su centro de atención 24x7."
+  },
+  {
+    "id": 4,
+    "title": "Productividad",
+    "tag": "¡nuevo!",
+    "icon": "/images/home/benefits/productivity.svg",
+    "copy": "Optimización de tiempo y recursos mediante la autogestión de tu cuenta y herramientas de analítica avanzada."
+  },
+  {
+    "id": 5,
+    "title": "Salud y seguridad",
+    "tag": "",
+    "icon": "/images/home/benefits/security.svg",
+    "copy": "Permite minimizar riesgos en la conducción y aumentar la vida útil de los activos."
+  },
+  {
+    "id": 6,
+    "title": "Accesibilidad",
+    "tag": "¡nuevo!",
+    "icon": "/images/home/benefits/accessibility.svg",
+    "copy": "Toda la información de tu flota al alcance de tu mano en la oficina, en tu casa o desde tu celular."
+  }
+]

@@ -1,0 +1,277 @@
+.services_card__image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card__content {
+  flex: 1 1 100%;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.card__title {
+  margin-bottom: 1rem;
+}
+
+.card__image {
+  flex: 0 0 auto;
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 2rem;
+}
+
+.services_card {
+  column-gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: flex-end;
+}
+
+.feature_list {
+  column-gap: 10.5rem;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 6rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .feature_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .feature_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.feature {
+  display: flex;
+  font-size: 2rem;
+}
+
+.feature::before {
+  background-image: url('/images/icons/icon--dark-check.svg');
+  background-size: 100%;
+  content: '';
+  height: 2.4rem;
+  margin-right: 2rem;
+  margin-top: 0.4rem;
+  width: 2.4rem;
+}
+
+.tab__services {
+  display: grid;
+  row-gap: 4.7rem;
+  grid-template-columns: 1fr;
+}
+
+.services_card__images {
+  position: relative;
+  height: 100%;
+}
+
+/* .services_card__image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  } */
+
+.services_card__texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.services_card__title {
+  margin-bottom: 1.6rem;
+}
+
+.services_card__action {
+  flex: 1 0 auto;
+}
+
+.services_card__content {
+  flex: 1 1 100%;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  /* margin-bottom: 3.5rem; */
+  max-width: 18em;
+}
+
+.services_card__label {
+  background-color: var(--light-blue);
+  color: var(--white);
+  grid-column: 1;
+  padding: 0.6rem 1.25rem;
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .services_card {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+
+  .services_card__content {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* Tab: Products and Services */
+
+.tabs__services {
+  /* background-image: url('../images/products-and-services/bg--circle.svg'); */
+  background-repeat: no-repeat;
+}
+
+.tab__maintainance {
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 7rem;
+  padding-top: 17rem;
+}
+
+.maintainance__description {
+  grid-column: 1 / 3;
+  max-width: 34em;
+}
+
+.maintainance__content {
+  display: grid;
+  grid-column: 1 / 3;
+  grid-template-rows: repeat(4, 1fr);
+  grid-auto-flow: column;
+  row-gap: 2rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs__header,
+  .tabs__content {
+    grid-column: unset;
+  }
+
+  .header__title {
+    max-width: 9.5em;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .tabs__header {
+    align-items: center;
+    padding: 0 2rem;
+    top: 3rem;
+    z-index: 1;
+  }
+
+  .header__item-list {
+    align-items: stretch;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 0.35rem 3rem var(--blue--translucent-300);
+    padding: 2rem;
+    position: absolute;
+    pointer-events: none;
+    top: calc(100% - 2rem);
+    transform: scale(0.9, 0) translateY(-10rem);
+    transform-origin: top;
+    transition: transform 0.2s;
+    width: calc(100% - 4rem);
+    z-index: 2;
+  }
+
+  .tabs__header--open .header__item-list {
+    transform: none;
+    pointer-events: all;
+  }
+
+  .header__item--selection {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .tabs__header--open .header__item--selection::after {
+    transform: rotate(-180deg);
+  }
+
+  .header__item {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    transform: none;
+    width: 100%;
+  }
+
+  .header__item-list .header__item:last-child {
+    margin: 0;
+  }
+
+  .header__item-list .header__item--active::before {
+    opacity: 0;
+  }
+
+  .tabs__content {
+    display: flex;
+    justify-content: center;
+    min-height: 350px;
+    padding-top: 40px;
+  }
+
+  .card_list {
+    justify-items: center;
+    justify-content: center;
+    max-width: 300px;
+  }
+
+  .garantia-card {
+    align-items: center;
+  }
+
+  .garantia-card__label {
+    text-align: center;
+    width: 100%;
+  }
+
+  .garantia-card__title {
+    text-align: left;
+    width: 100%;
+  }
+
+  .tab--maintainance {
+    max-width: 350px;
+    padding-top: 4rem;
+  }
+
+  .maintainance__description {
+    text-align: center;
+  }
+
+  .maintainance__content {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+  }
+
+  .services_card {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+
+  .services_card__content {
+    margin-bottom: 2.5rem;
+  }
+}

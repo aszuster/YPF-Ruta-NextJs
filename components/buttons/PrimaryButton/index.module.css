@@ -1,0 +1,21 @@
+.button {
+  align-items: center;
+  background-color: var(--button-bg-color, var(--blue));
+  border-radius: 0.4rem;
+  color: var(--button-fg-color, var(--white));
+  display: flex;
+  font-family: inherit;
+  font-weight: 700;
+  justify-content: center;
+  line-height: calc(2 / 1.4);
+}
+
+.button__large {
+  height: 4.5rem;
+  width: 18.6rem;
+}
+
+.button__primary {
+  background-color: var(--blue);
+  color: var(--white);
+}

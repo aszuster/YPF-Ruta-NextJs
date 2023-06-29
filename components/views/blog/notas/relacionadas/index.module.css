@@ -1,0 +1,59 @@
+/*------------------------------------*\
+#RELATED
+\*------------------------------------*/
+
+.negro {
+    color: #000;
+}
+.text a {
+    color: #0451DD;
+    text-decoration: underline;
+}
+.underlined {
+    margin: 10px 5px 0;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid #0451DD;
+    line-height: 1.7;
+}
+.azul {
+    color: #0451DD;
+}
+.section__related {
+    padding: 9rem 0 7.7rem;
+    width: 100%;
+}
+.section__related::before {
+    background-color: #fff;
+    background-image: url(/images/benefits/benefits/right-shape.svg);
+    background-position: 120% 10%;
+    background-repeat: no-repeat;
+}
+.related {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 112rem;
+    width: 100%;
+    margin: 0 auto 30px auto;
+    padding: 0 2rem;
+}
+
+@media(max-width: 767px) {
+    .section__related {
+        padding: 5rem 0;
+    }
+    .section__related::before {
+        display: none;
+    }
+    .related h5 {
+        padding-left: 1rem;
+    }
+}
+
+.container {
+    max-width: 112rem;
+    width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+}

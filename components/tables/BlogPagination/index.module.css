@@ -1,0 +1,112 @@
+.styled_table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border-bottom: 1px solid var(--silver-chalice);
+}
+.styled_table thead tr {
+    background-color: transparent;
+    color: var(--black);
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--silver-chalice);
+}
+.styled_table th {
+    height: 32px;
+    padding: 0 2rem;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.styled_table td {
+    height: 59px;
+    padding: 0 2rem;
+}
+.styled_table tbody tr:nth-child(odd) {
+    background-color: var(--light-grey); 
+}
+.styled_table tbody tr:nth-child(even) {
+    background-color: var(--white);
+}
+.btn_edit {
+    background-color: var(--dark-blue);
+    padding: 10px;
+    color: var(--white);
+    border-radius: 5px;
+}
+.container__pagination {
+    padding: 1.5rem 0;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.container__pagination p {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.container__buttons {
+    display: flex;
+    align-items: center;
+}
+.container__buttons button {
+    font-family: DIN, sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 1.5;
+    
+    transition: .3s;
+    user-select: none;
+    margin: 0 5px;
+    color: #0451dd!important;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-left: 8px;
+    font-weight: 700;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__buttons button:hover {
+    background-color: var(--silver-chalice);
+    background-color: transparent;
+}
+.container__buttons button.nml {
+    margin-left: -1px;
+    color: var(--grey);
+
+}
+.container__buttons button.brl,
+.container__buttons button.brr {
+    color: var(--grey);
+    padding: 0 40px;
+    border: 0!important;
+    font-weight: 400;
+    font-size: 13px;
+    background-color: transparent;
+    color: #0451dd;
+    margin: 0 20px 0 0;
+}
+.container__buttons button.brr {
+    margin: 0 0 0 12px;
+}
+.container__buttons button:disabled,
+.container__buttons button[disabled]{
+    border: 2px solid #0451dd;;
+    background-color: transparent;
+    color: var(--grey)!important;
+    cursor: default;
+}
+.container__buttons button.btn__active {
+    background-color: #0451dd!important;
+    color: #f2f2f2!important;
+}
+.color__active {
+    color: blue!important
+}

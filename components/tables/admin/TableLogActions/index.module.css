@@ -1,0 +1,39 @@
+.separador {
+  height: 1px;
+  background-color: var(--silver-chalice);
+  margin-top: .5rem;
+}
+.container__registro {  
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  height: 59px;
+  border-right: 2px solid transparent;
+}
+.container__registro:nth-child(odd) {
+  background-color: var(--light-grey);
+}
+.container__registro:nth-child(even) {
+  background-color: var(--white);
+}
+  .container__registro.create {
+      border-color: #0CEDAE;
+  }
+  .container__registro.update {
+      border-color: var(--light-blue);
+  }
+  .container__registro.delete {
+      border-color: #ED4818;
+  }
+  .container__registro .fecha {
+      color: var(--blue);
+      font-weight: 500;
+      margin-right: .66rem;
+  }
+  .container__registro .user {
+      color: var(--grey);
+      font-weight: 500;
+      padding-bottom: .15rem;
+      border-bottom: 1px solid var(--grey);
+      margin-right: .66rem;
+  }

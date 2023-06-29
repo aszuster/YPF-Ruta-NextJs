@@ -1,0 +1,47 @@
+.nav__button {
+  align-items: center;
+  background-color: var(--button-bg-color, var(--blue));
+  border-radius: 0.4rem;
+  color: var(--button-fg-color, var(--white));
+  display: flex;
+  font-family: inherit;
+  font-weight: 700;
+  justify-content: center;
+  line-height: calc(2 / 1.4);
+  height: 3.6rem;
+  width: 10.9rem;
+  text-decoration: none;
+}
+
+.nav__button__secondary {
+  background: var(--white);
+  color: var(--black);
+  --button-bg-color: var(--white);
+  --button-fg-color: var(--black);
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.nav__button__secondary:hover {
+  background: #e1e1e1;
+}
+
+.text {
+  --fg-color: var(--black);
+  color: var(--fg-color, inherit);
+  font-family: inherit;
+}
+
+.text__body_02 {
+  font-size: 1.4rem;
+  line-height: calc(2 / 1.4);
+}
+
+.adherirme {
+  height: 4.5rem;
+  min-height: 4.5rem;
+  width: 155px !important;
+}

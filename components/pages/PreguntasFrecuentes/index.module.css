@@ -1,0 +1,291 @@
+/*------------------------------------*\
+  #PREGUNTAS FRECUENTES
+\*------------------------------------*/
+
+/* Section: Hero */
+
+.main_layout {
+  background-image: url('/images/faq/bg--shapes.svg'),
+    url('/images/faq/bg--lines2.svg');
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+.section__hero::before {
+  background: none;
+}
+
+.section__faq::before {
+  background: none;
+}
+
+.section__hero {
+  --fg-color: var(--black);
+  align-items: center;
+  margin: 9.2rem auto 0;
+  max-width: 107rem;
+  padding: 12rem 2rem;
+  width: 100%;
+}
+
+.hero__title {
+  margin-bottom: 1.7rem;
+  text-align: center;
+}
+
+.hero__text {
+  line-height: calc(1.9 / 1.6);
+  margin-bottom: 10.3rem;
+  max-width: 40em;
+  text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+  .hero__title {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+/* Section: FAQ */
+
+.text {
+  font-family: DIN, sans-serif;
+}
+
+.section__faq {
+  padding: 5rem 1rem;
+}
+
+.question_group {
+  align-items: flex-start;
+  column-gap: 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 13rem;
+}
+
+.question_group__title {
+  color: var(--blue);
+  grid-column: 2 / 4;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 14rem;
+}
+
+.question_group__content {
+  grid-column: 4 / 11;
+}
+
+.question {
+  margin-bottom: 5rem;
+  width: 100%;
+}
+
+.question:last-of-type {
+  margin-bottom: 0;
+}
+
+.question__title {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0px 20px 40px rgba(164, 164, 164, 0.2);
+  color: var(--blue);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  padding: 2.5rem 3.8rem 2.5rem 5rem;
+}
+
+.question__title::after {
+  /* content: url('../images/icons/icon--minus.svg'); */
+  transform: translateY(-0.5rem);
+}
+
+.question__collapsed .question__title {
+  color: var(--mid-black-grey);
+  font-weight: normal;
+}
+
+.question__collapsed .question__title::after {
+  /* content: url('../images/icons/icon--plus.svg'); */
+  transform: none;
+}
+
+.question__answer {
+  align-items: flex-start;
+  color: var(--mid-black-grey);
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  margin-bottom: 5rem;
+}
+
+.question__collapsed .question__answer {
+  display: none;
+}
+
+.question__answer * {
+  margin-bottom: 3.4rem;
+}
+
+.question__answer .list__with_checks {
+  padding-left: 5rem;
+}
+
+.question__answer .list__with_checks .list__item {
+  margin-bottom: 3.4rem;
+}
+
+.question__answer .list__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.question__answer .list__ordered .list__item {
+  margin-bottom: unset;
+}
+
+@media screen and (max-width: 900px) {
+  .question_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    padding: 0 2rem;
+  }
+
+  .question__title {
+    padding: 2.5rem;
+  }
+
+  .question_group__title {
+    margin-bottom: 4rem;
+    position: initial;
+  }
+
+  .question_group__content {
+    width: 100%;
+  }
+}
+
+/* Section: Benefits */
+
+.section__benefits {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.benefits__callout {
+  --fg-color: var(--white);
+
+  background-color: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / 6;
+  padding: 10.6rem 9rem;
+}
+
+.benefits_callout__indicators {
+  font-weight: bolder;
+}
+
+.benefits_callout__link {
+  font-weight: bolder;
+}
+
+.benefits__texts {
+  --fg-color: var(--white);
+
+  align-content: center;
+  align-items: flex-start;
+  background-image: url('/images/faq/bg--lines.svg'),
+    linear-gradient(180deg, var(--black) 0%, var(--dark-blue) 100%);
+  background-position: calc(100% - 0.5rem) calc(100% - 1rem), top;
+  display: flex;
+  flex-direction: column;
+  grid-column: 6 / 10;
+  grid-row: 1 / 3;
+  justify-content: center;
+  padding: 2rem 4rem 2rem 14rem;
+  padding-left: clamp(4rem, 10vmax, 14rem);
+  text-align: left;
+}
+
+.benefits__title {
+  margin-bottom: 2.2rem;
+  max-width: 6em;
+  width: 100%;
+}
+
+.benefits__text {
+  line-height: 1.2;
+  margin-bottom: 5.5rem;
+  max-width: 25em;
+}
+
+.benefits__button {
+  --button-bg-color: var(--light-blue);
+}
+
+.benefits__image {
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+  justify-self: flex-end;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .section__benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits__callout,
+  .benefits__texts,
+  .benefits__image {
+    grid-column: initial;
+    grid-row: initial;
+  }
+
+  .benefits__callout {
+    display: none;
+  }
+
+  .benefits__texts {
+    padding: 10rem 2rem;
+  }
+}
+
+/* Section terminos y condiciones */
+
+.section__hero.tyc {
+  align-items: start;
+  max-width: 80rem;
+}
+
+.section__hero.tyc h2 {
+  margin-top: 50px;
+}
+
+.section__hero.tyc p {
+  margin-top: 40px;
+}
+
+.section__hero.tyc a:link,
+.section__hero.tyc a:visited {
+  color: var(--blue);
+}
+
+#scroll {
+  position: fixed;
+  top: 87vh;
+  right: 6.5%;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  z-index: 2;
+  padding-top: 4px;
+  box-shadow: 0px 4px 14px rgb(0 0 0 / 10%);
+  z-index: 9;
+}

@@ -1,0 +1,15 @@
+.container__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container__children {
+  display: flex;
+  gap: .5rem;
+}
+
+.separador {
+  height: 1px;
+  background-color: var(--silver-chalice);
+  margin-top: .5rem;
+}

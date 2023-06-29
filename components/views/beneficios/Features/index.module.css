@@ -1,0 +1,89 @@
+.section__main_features {
+  --fg-color: var(--white);
+  margin: 0 auto;
+  max-width: 110rem;
+  padding: 14.1rem 1rem 27.5rem;
+  width: 100%;
+}
+
+.section__main_features::before {
+  background-color: var(--dark-blue);
+  background-image: url('/images/beneficios/main-features/bg--lines.svg'),
+    url('/images/beneficios/main-features/bg--circular-shape.svg'),
+    linear-gradient(180deg, var(--dark-blue) 0%, var(--black) 100%);
+  background-repeat: no-repeat;
+  background-position: top center, bottom right, top;
+}
+
+.main_features__title {
+  margin-bottom: 9.2rem;
+  max-width: 8em;
+}
+
+.feature_list {
+  column-gap: 10.5rem;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 6rem;
+}
+
+.feature__icon {
+  margin-bottom: 1rem;
+}
+
+.feature__title {
+  margin-bottom: 1.4rem;
+  max-width: 9em;
+}
+
+.feature__description {
+  line-height: 1.25;
+}
+
+@media screen and (max-width: 1000px) {
+  .section__main_features {
+    padding: 10rem 3rem;
+  }
+
+  .feature_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .feature_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section__main_features::before {
+    background-color: var(--dark-blue);
+    background-image: url('/images/beneficios/main-features/bg--lines.svg'),
+      url('/images/beneficios/main-features/bg--circular-shape.svg'),
+      linear-gradient(180deg, var(--dark-blue) 0%, var(--black) 100%);
+    background-repeat: no-repeat;
+    background-position: 13% top, right bottom, top;
+    background-size: auto, 0, auto;
+  }
+
+  .feature_list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .feature_list__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature__title {
+    max-width: 9em;
+  }
+
+  .feature__description {
+    max-width: 14em;
+  }
+}

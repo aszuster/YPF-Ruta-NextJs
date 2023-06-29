@@ -1,0 +1,424 @@
+/*------------------------------------*\
+  #SECTION-NEWS
+\*------------------------------------*/
+
+.section__news {
+    --fg-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15.4rem 0 7rem;
+    position: relative;
+}
+
+.section__news::before {
+    background-color: var(--black);
+    background-image: url("/images/home/news/bg-1.svg"),
+        url("/images/home/news/bg-2.svg"), url("/images/home/news/bg-3.svg");
+    background-position: left, right top, right bottom;
+    background-repeat: no-repeat;
+    background-size: auto, auto, auto;
+}
+
+.news__content_wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 1200px;
+    gap: 4rem;
+    padding: 0 10rem;
+    width: 100%;
+}
+
+.contact__texts {
+    color: var(--white);
+}
+
+.news__pic {
+    position: relative;
+    width: 360px;
+}
+
+.news__title {
+    margin-bottom: 3rem;
+}
+
+.news__text {
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
+
+.news__button {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+    margin-top: 3rem;
+}
+
+.section__news .list__with_checks .list__item::before {
+    content: url(/images/icons/icon--light-check.svg)!important;
+    margin-right: 2rem;
+}
+
+.light_icon::before {
+    content: url(/images/icons/icon--light-check.svg)!important;
+    margin-right: 2rem;
+}
+
+.section__news .list__with_checks .list__item {
+    margin-bottom: 20px;
+}
+.light_icon {
+    margin-bottom: 20px;
+}
+
+.tit__label {
+    background: var(--light-blue);
+    border-radius: 2px 0px 0px 2px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 0.25em 1em;
+    text-transform: uppercase;
+}
+
+.cont_info__label {
+    position: relative;
+    line-height: 0;
+    display: inline-block;
+}
+
+.info__label {
+    background: var(--light-blue);
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2.2rem;
+    padding: 1em 1.5em;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+}
+
+.info__label.right {
+    right: 0px;
+}
+
+.info__label small {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.info__label.top {
+    top: 0px;
+    right: 0px;
+}
+
+.info__label.bottom {
+    bottom: 0;
+    right: 0px;
+}
+
+.news_list {
+    --card-spacing: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    /* max-width: 1180px; */
+    width: 100%;
+}
+
+.news_list.carousel {
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.news_list .carousel__slides_wrapper {
+    display: flex;
+    /*margin-bottom: 4.9rem;*/
+    margin-left: calc(var(--card-spacing) * -1);
+}
+
+.news_list .carousel__controls {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.news_list .carousel__controls button {
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 0.9rem;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+}
+.news_list .carousel__control {
+    color: var(--blue);
+}
+.news_list .carousel__control:first-child {
+    margin-right: 1rem;
+}
+.news_list .carousel__slide {
+    display: flex;
+    flex: 1 0 auto;
+    padding-left: var(--card-spacing);
+    position: relative;
+}
+.google_play {
+    height: 50px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .news__title {
+        font-size: 35px;
+    }
+    .benefits__text {
+        max-width: 29.8rem;
+    }
+
+    .news_list .carousel__slides_wrapper {
+        margin-left: -0.9rem;
+    }
+
+    .news_list .carousel__slide {
+        padding-left: 2rem;
+    }
+
+    .carousel__slides-wrapper .news__texts .text--h3 {
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 640px) {
+    .news_list.carousel {
+        align-items: unset;
+    }
+    .news_list .carousel__controls {
+        margin-top: 360px;
+    }
+    .news__content_wrapper {
+        display: block;
+        max-width: unset;
+        padding: 0 10px 0 0;
+        width: 34rem;
+    }
+
+    .news__pic img {
+        width: 100%;
+    }
+
+    .news__pic.mob {
+        margin-bottom: 30px;
+    }
+}
+
+.info__label__full {
+    width: 312px;
+  }
+  
+  .info__label__full__choferes {
+    width: 309px;
+  }
+  
+  .info__label__full__telematica {
+    width: 100%;
+  }
+
+  /* .header__title {
+    margin-bottom: 2.8rem;
+    max-width: 14em;
+    font-size: 4.8rem;
+    line-height: 1.25;
+    margin-top: -0.2rem;
+  }
+  
+  @media(max-width: 767px) {
+    .header__title {
+      font-size: 3.7rem;
+      font-weight: 500;
+      padding: 2.3rem 3rem;
+      line-height: 1.2;
+      letter-spacing: -0.05rem;
+      margin-bottom: 0;
+    }
+  } */
+
+/* EMBLA NOVEDADES */
+
+.planes_buttons_embla {
+    position: absolute;
+    padding: 0 10px;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .planes_buttons_embla button {
+    background-color: white;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    line-height: 52px;
+    box-shadow: 0px 4px 14px rgb(0 0 0 / 10%);
+  }
+  .planes_buttons_embla button:disabled {
+    opacity: .4;
+  }
+  
+  /* @media screen and (min-width: 768px) {
+    .planes_buttons_embla {
+      display: none;
+    }
+    .plan_card {
+      width: 100%;
+      max-width: 420px;
+      min-height: 550px;
+      height: auto;
+      padding-bottom: 50px;
+      -moz-transform: scale(1);
+      -webkit-transform: scale(1);
+      -o-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+    .embla__slide__inner {
+      position: relative;
+      overflow: hidden;
+      overflow: inherit;
+      padding: 10px!important;
+      margin: 0!important;
+    }
+  
+    .plan_card:hover {
+      background-color: #00407B;
+    }
+    .plan_card:hover * {
+      color: #fff;
+    }
+    .plan_card:hover .plan_card__button {
+      display: flex;
+      line-height: 38px;
+      background-color: white;
+      color: #00407B;
+    }
+  }
+   */
+  
+  
+  
+/* EMBLA BENEFICIOS */
+
+.embla {
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.embla__viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.embla__viewport.is-draggable {
+    cursor: move;
+    cursor: grab;
+}
+
+.embla__viewport.is-dragging {
+    cursor: grabbing;
+}
+
+.embla__container {
+    display: flex;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.embla__slide {
+    position: relative;
+    /* min-width: 100%; */
+}
+
+.embla__slide__inner {
+    position: relative;
+    overflow: hidden;
+    overflow: inherit;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.embla__button {
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+    touch-action: manipulation;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    fill: #00adee;
+    padding: 0;
+}
+.embla__button:disabled {
+    cursor: default;
+    opacity: 0.3;
+}
+.embla__button__svg {
+    width: 100%;
+    height: 100%;
+    fill: #00adee;
+}
+
+.embla__slide {
+    flex: 0 0 100%; /* Default slide covers 100% of the viewport */
+}
+@media (max-width: 768px) {
+    .embla__slide {
+        flex: 0 0 75%; /* Breakpoint SM slide covers 50% of the viewport */
+    }
+}
+  
+.news_buttons_embla {
+    position: absolute;
+    padding: 0 10px;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.news_buttons_embla button {
+    background-color: white;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    line-height: 52px;
+    box-shadow: 0px 4px 14px rgb(0 0 0 / 10%);
+}
+.news_buttons_embla button:disabled {
+    opacity: .4;
+}

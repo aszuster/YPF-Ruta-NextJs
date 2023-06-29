@@ -1,0 +1,23 @@
+/*------------------------------------*\
+  #COMPONENT-MAP
+\*------------------------------------*/
+
+.map {
+  width: 100%;
+}
+
+.marker {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    user-select: none;
+    transform: translate(-50%, -50%);
+    background: transparent url('/images/marker-ruta.svg');
+    background-size: cover;
+    height: 33px;
+    width: 22px;
+  }
+
+  .lodola {
+    outline: 3px solid red
+  }

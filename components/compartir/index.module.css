@@ -1,0 +1,162 @@
+/**
+ * CONTENTS
+ *
+ * SECTIONS
+ * Header.............Title, image, copy
+ * Text...............Body of the article
+ * Carousel...........Carousel
+ * Related............Related articles
+ **/
+
+.compartir {
+    text-transform: initial;
+    display: inline-block;
+    text-transform: uppercase;
+
+    padding: 1.3rem 1.6rem;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    letter-spacing: 0.01rem;
+    text-align: center;
+    width: 22.8rem;
+}
+.compartir i {
+    font-style: normal;
+}
+.compartir span {
+    left: -6px!important;
+    position: absolute;
+}
+@media(max-width: 767px) {
+    .compartir {
+        /*display: none;*/
+        border-radius: 100px;
+        padding: 1.3rem 1.2rem;
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    .compartir i {
+        display: none;
+    }
+    .compartir span {
+        left: 0px!important;
+    }
+}
+.tippy_box {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: normal;
+    outline: 0;
+    transition-property: transform,visibility,opacity;
+
+    background-color: white;
+    color: black;
+    /*box-shadow: 0px 12px 15px rgba(242, 242, 242, 0.85);*/
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    width: 20rem;
+    margin-top: -3px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+.tippy_content {
+    position: relative;
+    padding: 5px 9px;
+    z-index: 1;
+}
+.tippy_arrow {
+    width: 16px;
+    height: 16px;
+    color: white;
+    top: 0;
+    position: absolute;
+    left: 0px;
+    transform: translate(92px, 0px);
+}
+.tippy_arrow:before {
+    content: "";
+    position: absolute;
+    border-color: transparent;
+    border-style: solid;
+}
+.tippy_arrow:before {
+    top: -7px;
+    left: 0;
+    border-width: 0 8px 8px;
+    border-bottom-color: initial;
+    transform-origin: center bottom;
+}
+.redes {
+    padding: 1.2rem 0.5rem 0;
+}
+.redes li {
+    margin-bottom: 1.7rem;
+    line-height: 1rem;
+    font-size: 1.4rem;
+}
+.redes li:last-child {
+    margin-bottom: 1.2rem;
+}
+.redes span {
+    background-color: #0451DD;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-right: 0.8rem;
+    vertical-align: middle;
+}
+.maxed .compartir {
+    position: relative;
+    font-weight: 400;
+    padding: 1.3rem 1.6rem;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    letter-spacing: 0.01rem;
+    text-align: center;
+    width: 28.2rem;
+}
+.compartir span {
+    margin-right: 0.9rem;
+}
+@media(max-width: 767px) {
+    .maxed .compartir {
+        font-size: 1.6rem;
+        margin-top: 0.8rem;
+        width: 31.5rem;
+        padding: 1.7rem;
+    }
+}
+.compartir span {
+    position: relative;
+    top: 2px;
+    left: -6px;
+}
+.compartir span {
+    left: 0;
+}
+.compartir_box {
+    position: absolute;
+    max-width: 228px;
+    margin-top: 15px;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+.closed {
+    opacity: 0;
+}
+.share__ShareButton i {
+    font-style: normal;
+    margin-left: 10px;
+    position: relative;
+    top: -7px;
+}

@@ -1,0 +1,22 @@
+.section__login {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: var(--mine-shaft);
+}
+.section__img_background{
+    background-image: url('/images/login/login.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70vw;
+    height: 100vh;
+}
+.section__form {
+    color: var(--white);
+    margin: auto;
+    width: 50%;
+}
+.logo__wrapper > span {
+   display: block !important;
+   margin: 0 auto !important;
+}

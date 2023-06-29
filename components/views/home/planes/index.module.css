@@ -1,0 +1,380 @@
+/*------------------------------------*\
+  #SECTION-PLANS
+\*------------------------------------*/
+
+.section__plans {
+  --fg-color: var(--mid-black-grey);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 9rem 2rem 10.6rem;
+  z-index: 1;
+}
+
+.section__plans:before {
+  background-color: var(--white-sand--translucent-100);
+  background-image: url(/images/home/plans/vectors-06.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.plans__title {
+  margin-bottom: 2.2rem;
+  text-align: left;
+}
+
+.plans__text {
+  margin-bottom: 6.6rem;
+}
+
+/* .plans__card_list {
+  align-items: flex-start;
+  display: flex;
+  max-width: 113rem;
+  width: 100%;
+} */
+
+.plan_card {
+  background-color: var(--white);
+  background-image: url(/images/home/plans/figures-10.svg), url(/images/home/plans/figures-11.svg);
+  background-position: 0 100%, 100% 0;
+  background-repeat: no-repeat;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex: 1 0 33rem;
+  flex-direction: column;
+  min-height: 49.7rem;
+  max-width: 36rem;
+  min-width: 36rem;
+  padding: 9.3rem 2.5rem 2.8rem 5.1rem;
+  width: 100%;
+  transition: transform 0.5s ease;
+  transition: all 0.3s ease-in-out 0s;
+  transform: scale(.9);
+}
+
+.plan_card:last-child {
+  margin-right: 0;
+}
+.plan_card__label {
+  align-items: center;
+  align-self: flex-end;
+  background: var(--light-blue);
+  border-radius: 0.2rem 0 0 0.2rem;
+  color: var(--white);
+  display: flex;
+  height: 2.4rem;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 2rem;
+  width: 7rem;
+}
+.plan_card__title {
+  color: var(--dark-blue);
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.plan_card__description {
+  font-weight: bold;
+  line-height: calc(20 / 14);
+  margin-bottom: 2.7rem;
+  max-width: 18.2em;
+}
+
+.plan_card__button {
+  align-items: center;
+  justify-content: center;
+  display: none;
+  font-size: 1.4rem;
+  line-height: calc(1.7 / 1.4);
+  width: 14.3rem;
+  height: 3.6rem;
+}
+
+.plan_card__feature_list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  margin-bottom: 2.2rem;
+}
+
+
+@media (max-width: 768px) {
+  .carousel__slide__active .plan_card__button {
+    display: flex;
+  }
+  .carousel__slide__active .plan_card {
+    --fg-color: var(--white);
+    background-color: var(--dark-blue);
+    color: var(--white);
+    /*flex: 1 0 36rem;*/
+    padding-top: 5.8rem;
+    height: auto;
+    /*transition: transform 0.5s ease;*/
+    transition: all 0.5s ease-in-out 0s;
+    transform: scale(1.05);
+  }
+  .carousel__slide__active .plan_card .plan_card__title {
+    color: var(--light-blue);
+  }
+  .carousel__slide__active .plan_card .plan_card__button {
+    --button-bg-color: var(--white);
+    --button-fg-color: var(--dark-blue);
+  }
+}
+
+
+/* Plans carousel */
+
+/* .plans_list  {
+  --card-spacing: 3rem;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1180px;
+  width: 100%;
+} */
+/* .plans_list.carousel {
+  overflow: hidden;
+  position: relative;
+  /*align-items: center;
+  padding: 0 30px; 
+} */
+/* .plans_list.carousel .carousel__viewport {
+  padding-top: 20px;
+} */
+
+/* .plans_list  .carousel__slides_wrapper {
+  display: flex;
+  margin-bottom: 4.9rem;
+  margin-left: calc(var(--card-spacing) * -1);
+} */
+
+/* .plans_list  .carousel__controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin-top: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.plans_list  .carousel__controls button {
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 0.9rem;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.plans_list  .carousel__control {
+  color: var(--blue);
+} */
+
+/* .plans_list  .carousel__control:first-child {
+  margin-right: 1rem;
+}
+
+.plans_list  .carousel__slide {
+  display: flex;
+  flex: 1 0 auto;
+  padding-left: var(--card-spacing);
+  position: relative;
+} */
+
+@media (max-width: 1024px) {
+  .plans__title {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1.4rem;
+  }
+  .plans__text {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+  }
+  .section__plans {
+    padding: 9rem 0rem 10.6rem;
+  }
+  .plan_card {
+    flex: 1 1 auto;
+    height: auto;
+    margin-bottom: 2.4rem;
+    margin-right: 0;
+    max-width: 32.5rem;
+    min-width: 32.5rem;
+    order: 2;
+    padding: 4.7rem 2.5rem 2.8rem;
+  }
+  .news__texts .text--h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section__plans {
+    align-items: flex-start;
+  }
+  .plans__title {
+    max-width: 6em;
+  }
+  .plans__text {
+    max-width: 18em;
+  }
+}
+
+
+.planes_buttons_embla {
+  position: absolute;
+  padding: 0 10px;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.planes_buttons_embla button {
+  background-color: white;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  line-height: 52px;
+  box-shadow: 0px 4px 14px rgb(0 0 0 / 10%);
+}
+.planes_buttons_embla button:disabled {
+  opacity: .4;
+}
+
+@media screen and (min-width: 768px) {
+  .planes_buttons_embla {
+    display: none;
+  }
+  .plan_card {
+    width: 100%;
+    max-width: 420px;
+    min-height: 550px;
+    height: auto;
+    padding-bottom: 50px;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  .embla__slide__inner {
+    position: relative;
+    overflow: hidden;
+    overflow: inherit;
+    padding: 10px!important;
+    margin: 0!important;
+  }
+
+  .plan_card:hover {
+    background-color: #00407B;
+  }
+  .plan_card:hover * {
+    color: #fff;
+  }
+  .plan_card:hover .plan_card__button {
+    display: flex;
+    line-height: 38px;
+    background-color: white;
+    color: #00407B;
+  }
+}
+
+
+
+
+/* EMBLA BENEFICIOS */
+
+.embla {
+  position: relative;
+  width: 100%;
+  max-width: 870px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__viewport.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.embla__viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.embla__container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.embla__slide {
+  position: relative;
+  /* min-width: 100%; */
+}
+
+.embla__slide__inner {
+  position: relative;
+  overflow: hidden;
+  overflow: inherit;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.embla__button {
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+  touch-action: manipulation;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  fill: #00adee;
+  padding: 0;
+}
+.embla__button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+.embla__button__svg {
+  width: 100%;
+  height: 100%;
+  fill: #00adee;
+}
+
+.embla__slide {
+  flex: 0 0 50%; /* Default slide covers 100% of the viewport */
+}
+@media (max-width: 768px) {
+  .embla__slide {
+    flex: 0 0 75%; /* Breakpoint SM slide covers 50% of the viewport */
+  }
+}

@@ -1,0 +1,95 @@
+.styled_table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border-bottom: 1px solid var(--silver-chalice);
+}
+
+.styled_table thead tr {
+    background-color: transparent;
+    color: var(--black);
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--silver-chalice);
+}
+
+.styled_table th {
+    height: 32px;
+    padding: 0 2rem;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.styled_table td {
+    height: 59px;
+    padding: 0 2rem;
+}
+
+.styled_table tbody tr:nth-child(odd) {
+    background-color: var(--light-grey);
+}
+.styled_table tbody tr:nth-child(even) {
+    background-color: var(--white);
+}
+
+.btn_edit {
+    background-color: var(--dark-blue);
+    padding: 10px;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.container__pagination {
+    padding: 1.5rem 0;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+    .container__pagination p {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+.container__buttons {
+    display: flex;
+    align-items: center;
+}
+    .container__buttons button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 34px;
+        width: 38px;
+        border: 1px solid var(--grey);
+        color: var(--black);
+        transition: .3s;
+        user-select: none;
+    }
+    .container__buttons button:hover {
+        background-color: var(--silver-chalice);
+    }
+    .container__buttons button.nml {
+        margin-left: -1px;
+    }
+    .container__buttons button.brl {
+        border-radius: .5rem 0 0 .5rem;
+    }
+    .container__buttons button.brr {
+        border-radius: 0 .5rem .5rem 0;
+    }
+    .container__buttons button.btn__active {
+        background-color: var(--silver-chalice);
+        color: var(--white);
+    }
+    .container__buttons button:disabled,
+    .container__buttons button[disabled]{
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+      cursor: default;
+    }
+
+    .color__active {
+        color: var(--blue)
+    }

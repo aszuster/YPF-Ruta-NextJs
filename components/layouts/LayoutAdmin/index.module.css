@@ -1,0 +1,74 @@
+.section__container {
+  display: block;
+  width: 100%;
+  /* overflow: auto; */
+}
+.section__dashboard {
+  width: 100vw;
+  min-width: 1336px;
+  min-height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+}
+.section__menu {
+  width: 280px;
+  background-color: var(--black);
+  padding: 3rem 1rem;
+}
+.section__content {
+  width: calc(100% - 280px);
+  background-color: var(--white-sand);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding: 4rem 13rem 7rem 7rem;
+}
+
+.container__logo {
+  text-align: center;
+  user-select: none;
+}
+.container__logo h5 {
+  color: var(--grey);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.container__user {
+  border-top: 1px solid var(--tundora);
+  border-bottom: 1px solid var(--tundora);
+  margin-top: 4rem;
+  padding: 2rem;
+}
+.container__user h5 {
+  color: var(--white);
+  font-size: 16px;
+}
+.container__user p {
+  color: var(--light-blue);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.container__menu {
+  margin-top: 5rem;
+  padding-left: 2rem;
+}
+.container__menu ul li {
+  margin: 2rem 0;
+}
+.container__menu ul li a {
+  width: 100%;
+  color: var(--grey);
+  font-size: 24px;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+  user-select: none;
+}
+.container__menu ul li a:hover,
+.container__menu ul li a.active {
+  border-bottom: 2px solid var(--white);
+  color: var(--white);
+}

@@ -1,0 +1,440 @@
+/**
+ * CONTENTS
+ *
+ * SECTIONS
+ * Header.............Title, image, copy
+ * Text...............Body of the article
+ * Carousel...........Carousel
+ * Related............Related articles
+ **/
+
+.azul {
+    color: #0451DD;
+}
+.initial {
+    text-transform: initial;
+  }
+.gris {
+    color: #AFAFAF;
+}
+.medio {
+    color: #333333;
+}
+.negro {
+    color: #000;
+}
+.upper {
+    text-transform: uppercase;
+}
+.din {
+    font-family: DIN;
+    font-style: normal;
+    font-weight: bold;
+}
+.inline_block {
+    display: inline-block;
+}
+.section__text p a,
+.section__text li a,
+.text a {
+    color: #0451DD;
+    text-decoration: underline;
+}
+.section__text ul li p {
+    padding: 0;
+}
+.w_100 {
+    width: 100%;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.main_layout.full {
+    max-width: 100%;
+}
+.container {
+    max-width: 112rem;
+    width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+}
+/*------------------------------------*\
+#HEADER
+\*------------------------------------*/
+
+.section__header {
+    padding: 15.5rem 2rem 0;
+    width: 100%;
+    max-width: 68rem;
+    margin: auto;
+}
+@media(max-width: 767px) {
+    .section__header {
+        padding: 11.5rem 0 0;
+    }
+}
+.section__header::before {
+background-color: #FAFAFA;
+}
+
+.box_compartir {
+    position: absolute;
+    left: -31rem;
+    font-weight: 400;
+    top: 3.2rem;
+}
+
+@media(max-width: 767px) {
+    .box_compartir {
+        border-radius: 100px;
+        position: absolute;
+        top: auto;
+        left: auto;
+        right: 20px;
+        bottom: 20px;
+        display: block;
+    }
+}
+
+.breadcrumbs h6 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: calc(2.8 / 1.6);
+    padding: 4.2rem 0 4rem;
+    letter-spacing: -0.01rem;
+}
+
+@media(max-width: 767px) {
+    .breadcrumbs h6 {
+        padding: 0;
+        letter-spacing: 0;
+        padding-left: 3rem;
+    }
+}
+
+.header__title {
+    margin-bottom: 2.8rem;
+    max-width: 14em;
+    font-size: 4.8rem;
+    line-height: 1.25;
+    margin-top: -0.2rem;
+}
+
+@media(max-width: 767px) {
+    .header__title {
+        font-size: 3.7rem;
+        font-weight: 500;
+        padding: 2.3rem 3rem;
+        line-height: 1.2;
+        letter-spacing: -0.05rem;
+        margin-bottom: 0;
+    }
+}
+.header__text {
+    max-width: 55rem;
+    margin-bottom: 3rem;
+    margin-left: -1px;
+}
+.date {
+    margin-bottom: 2.7rem;
+}
+.imagen {
+    margin-bottom: 3rem;
+}
+.imagen img {
+    width: 100%;
+}
+.imagen small {
+    font-size: 1.4rem;
+    color: #979797;
+}
+@media(max-width: 767px) {
+    .imagen img {
+        height: 25rem;
+        object-fit: cover;
+    }
+
+    .imagen small {
+        display: none;
+    }
+}
+.text__body_01 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: calc(2.5 / 1.6);
+    letter-spacing: -0.017rem;
+    margin-bottom: 2.8rem;
+}
+@media(max-width: 767px) {
+    .text__body_01 {
+        padding: 0 3rem;
+    }
+}
+/*------------------------------------*\
+#BODY
+\*------------------------------------*/
+.section__text {
+    padding: 2rem;
+    width: 100%;
+    max-width: 68rem;
+    margin: auto;
+}
+
+@media(max-width: 767px) {
+    .section__text {
+        padding: 1.3rem 3rem;
+    }
+}
+
+.section__text::before {
+    background-color: #FAFAFA;
+    background-image: url(/images/benefits/benefits/right-shape.svg);
+    background-position: 120% 39%;
+    background-repeat: no-repeat;
+}
+
+.section__text h4 {
+    font-size: 2.5rem;
+    margin: 3.2rem 0 4.7rem;
+    font-weight: 500;
+    letter-spacing: -0.04rem;
+}
+
+@media(max-width: 767px) {
+    .section__text h4 {
+        line-height: 1.2;
+        margin-bottom: 6rem;
+    }
+}
+
+.section__text p {
+    font-size: 1.9rem;
+    padding: 0 4px;
+    padding-right: 5px;
+    letter-spacing: -0.045rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+@media(max-width: 767px) {
+    .section__text p {
+        padding: 0;
+    }
+}
+
+.section__text img {
+    max-width: 98.5%;
+    margin: 8.5rem auto 6.5rem;
+}
+
+.section__text h6 {
+    margin-top: 7.2rem;
+    font-size: 1.8rem;
+    margin-bottom: 5.5rem;
+}
+
+.section__text a {
+    color: var(--blue);
+}
+
+.section__text a.button {
+    color: white;
+}
+.section__text > ul {
+    list-style: none;
+    padding: 2.7rem 23.9%;
+    font-size: 1.8rem;
+    padding-right: 17%;
+    line-height: 1.7;
+    margin-bottom: -1rem;
+}
+@media(max-width: 767px) {
+    .section__text > ul {
+        padding: 3rem 10%;
+    }
+}
+.section__text > ul > li {
+    position: relative;
+    margin-bottom: 3.6rem;
+}
+.section__text > ul > li::before {
+    content: "\2022";
+    color: var(--blue);
+    font-weight: bold;
+    display: block;
+    font-size: 1.7em;
+    position: absolute;
+    top: -1rem;
+    right: 107.5%;
+}
+
+.section__text ul ul {
+list-style: disc;
+padding-left: 7%;
+margin-bottom: 5.2rem;
+}
+
+
+
+
+
+.section__carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem 4rem;
+    position: relative;
+    margin-top: -2.5rem;
+    z-index: 2;
+  }
+  @media(max-width: 1025px) {
+    .section__carousel {
+      padding: 0 0 4rem;
+    }
+}
+@media(max-width: 767px) {
+    .section__carousel {
+        padding: 0;
+    }
+}
+.section__carousel::before {
+    background-color: #FAFAFA;
+    background-image: url(/images/blog/adorno2.svg);
+    background-position: -5% 0;
+    background-repeat: no-repeat;
+}
+.maxed {
+    width: 100%;
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+@media(max-width: 767px) {
+    .maxed {
+        padding: 0 3rem;
+    }
+}
+.maxed > a {
+    font-size: 1.85rem;
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--blue);
+}
+  
+  .maxed > a > img {
+    margin-right: 1.9rem;
+    margin-bottom: -4px;
+  }
+  
+  .maxed+.maxed {
+    margin-top: 3.4rem;
+    margin-bottom: 10.4rem;
+  }
+
+
+/*------------------------------------*\
+#INHERITED FROM BLOG
+\*------------------------------------*/
+
+.section__related .date {
+    margin-top: 1.3rem;
+    margin-bottom: 0;
+}
+
+@media(max-width: 767px) {
+    .section__header .date {
+        margin-top: 0.5rem;
+        margin-bottom: 4rem;
+        padding: 0 3.1rem;
+    }
+}
+.underlined {
+    display: block;
+    border-bottom: 1px solid #0451DD;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.section__text > ul.lista_checks {
+    padding: 0 23.9% 3.7rem 9.9%;
+    margin-top: -10px;
+}
+.section__text > ul.lista_checks li {
+    margin-bottom: 10px;
+}
+.section__text > ul.lista_checks > li::before {
+    content: "";
+    display: block;
+    /* font-size: 1.1em; */
+    position: absolute;
+    /* top: -3px;
+    right: 103.5%; */
+    background: url(/images/icons/cross.png) center center no-repeat;
+    height: 15px;
+    width: 15px;
+    background-size: contain;
+    top: 9px;
+    left: -26px;
+}
+.section__text > ul.lista_checks > li.check_ok::before {
+    content: "";
+    background: url(/images/icons/tilde.png) center center no-repeat;
+    height: 15px;
+    width: 15px;
+    background-size: contain;
+    top: 9px;
+    left: -26px;
+}
+
+
+
+.section__text ul {
+    list-style: none;
+    padding: 2.7rem 23.9%;
+    font-size: 1.8rem;
+    padding-right: 17%;
+    line-height: 1.7;
+    margin-bottom: -1rem;
+}
+@media(max-width: 767px) {
+    .section__text ul {
+        padding: 3rem 10%;
+    }
+}
+.section__text ul li {
+    position: relative;
+    margin-bottom: 3.6rem;
+}
+.section__text ul li::before {
+    content: "\2022";
+    color: var(--blue);
+    font-weight: bold;
+    display: block;
+    font-size: 1.7em;
+    position: absolute;
+    top: -1rem;
+    right: 107.5%;
+}
+.section__text ul ul {
+    list-style: disc;
+    padding-left: 7%;
+    margin-bottom: 5.2rem;
+}
+
+.section__text > ul > li {
+    position: relative;
+    margin-bottom: 3.6rem;
+}
+.section__text > ul > li::before {
+    content: "\2022";
+    color: var(--blue);
+    font-weight: bold;
+    display: block;
+    font-size: 1.7em;
+    position: absolute;
+    top: -1rem;
+    right: 107.5%;
+}
