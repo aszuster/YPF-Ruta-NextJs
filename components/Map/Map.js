@@ -4,7 +4,7 @@ import styles from 'components/Map/index.module.css'
 export default function Map({ center, zoom, children, events }) {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: 'AIzaSyAmtciwILxeaNUVQFzaBaj3MBNaolVz7gc',
+    googleMapsApiKey: '',
   })
   const position = {
     lat: -38.041043,
